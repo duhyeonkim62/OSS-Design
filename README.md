@@ -1,1 +1,1 @@
-# OSS-Design
+# this repositories for OSS design assignment
