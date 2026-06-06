@@ -1,0 +1,53 @@
+body{
+    font-family: Arial, sans-serif;
+    text-align:center;
+    margin:20px;
+}
+
+.info-panel{
+    margin-bottom:20px;
+}
+
+#seatContainer{
+
+    display:grid;
+
+    grid-template-columns:repeat(30,20px);
+
+    gap:2px;
+
+    justify-content:center;
+
+    margin:20px auto;
+}
+
+.seat{
+
+    width:20px;
+    height:20px;
+
+    border:1px solid black;
+
+    cursor:pointer;
+}
+
+.available{
+    background-color:green;
+}
+
+.reserved{
+    background-color:red;
+}
+
+.selected{
+    border:3px solid blue;
+}
+
+button{
+
+    margin:10px;
+
+    padding:10px 20px;
+
+    cursor:pointer;
+}

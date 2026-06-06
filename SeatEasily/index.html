@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Easily</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Seat Easily</h1>
+
+    <div id="loginScreen">
+        <button onclick="loginAsGuest()">Guest로 로그인</button>
+    </div>
+
+    <div id="appScreen" style="display:none;">
+        <div class="info-panel">
+            <h2>예약 정보</h2>
+            <p>좌석 : <span id="seatNumber">없음</span></p>
+            <p>예약 시작 시간 : <span id="startTime">-</span></p>
+            <p>예약 종료 시간 : <span id="endTime">-</span></p>
+            <p>총 이용 시간 : <span id="usedTime">0분 0초</span></p>
+            <p>남은 시간 : <span id="remainingTime">0분 0초</span></p>
+        </div>
+
+        <div id="seatContainer"></div>
+
+        <div class="button-panel">
+            <button onclick="reserveSeat()">예약</button>
+            <button onclick="cancelSeat()">예약 취소</button>
+            <button onclick="extendTime()">시간 연장 (+30분)</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
